@@ -1,0 +1,25 @@
+{
+  "name": "billet-generator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uchkalektor/billet-generator.git"
+  },
+  "author": "uchkalektor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uchkalektor/billet-generator/issues"
+  },
+  "homepage": "https://github.com/Uchkalektor/billet-generator#readme",
+  "bin": {
+    "billet": "./bin/index.js"
+  },
+  "dependencies": {
+    "yargs": "^17.3.1"
+  }
+}
