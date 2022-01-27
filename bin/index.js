@@ -1,12 +1,23 @@
 #!/usr/bin/env node
-import yargs from 'yargs'
-import { hideBin } from 'yargs/helpers'
+import meow from 'meow'
 
-const usage = '\nUsage: billet <template_name> to create billet files from template'
+const cli = meow(`
+	Usage
+		$ billet <template-name>
+		
+	Options
+		--template,	-t	Path to template for creation files
+		
+	Other options:
+    -h,	--help	show usage information
+    -v,	--version	print version info and exit
+`, {
+	flags: {
+		template: {
+			type: 'string',
+			alias: 't',
+		},
+	},
+})
 
-const options = yargs(hideBin(process.argv)).usage(usage)
-	.option('t', {
-		alias: 'template', describe: 'Path to template file', type: 'string', demandOption: false,
-	})
-	.help(true)
-	.argv
+export default cli
