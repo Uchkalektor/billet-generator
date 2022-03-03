@@ -1,0 +1,30 @@
+{
+  "name": "billet-generator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "eslint": "eslint --fix --ext .js ./bin --cache --cache-location './.eslintcache' --cache-strategy content"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uchkalektor/billet-generator.git"
+  },
+  "author": "uchkalektor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uchkalektor/billet-generator/issues"
+  },
+  "homepage": "https://github.com/Uchkalektor/billet-generator#readme",
+  "bin": {
+    "billet": "./bin/index.js"
+  },
+  "dependencies": {
+    "meow": "^10.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
